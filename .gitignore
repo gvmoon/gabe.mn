@@ -1,5 +1,5 @@
-development.ini
-production.ini
+./config/development.ini
+./config/production.ini
 *.egg
 *.egg-info
 *.pyc
