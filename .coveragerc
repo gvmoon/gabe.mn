@@ -1,0 +1,3 @@
+[run]
+source = gabe_mn
+omit = gabe_mn/test*
