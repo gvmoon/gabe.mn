@@ -9,8 +9,8 @@ class IndexViews(object):
         self.request = request
 
     @view_config(
-        request_method='GET',
-        renderer='templates/index.jinja2'
+        renderer='templates/index.jinja2',
+        request_method='GET'
     )
     def get(self):
         return {}
