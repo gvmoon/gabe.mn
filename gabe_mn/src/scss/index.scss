@@ -3,14 +3,40 @@
 //$icon-font-path: '~@nm/bootstrap-sass/assets/fonts/bootstrap/';
 //@import '~@nm/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
+$height: 2.5em;
+$margin: 5%;
+$padding: 1.25%;
+$bgColor: #121212;
+
 body {
+	& > .container {
+		background-color: $bgColor;
+		height: 100%;
+		margin-left: $margin;
+		margin-right: $margin;
+
+		& > main {
+			margin-top: $height;
+			width: 100%;
+		}
+	}
 	background-color: #1A1A1A;
 	height: 100vh;
 	margin: 0px;
-	padding-top: 70px;
 	width: 100vw;
 }
 
-.dark-bg {
-	background-color: #121212; 
+footer,
+header {
+	background-color: $bgColor;
+	color: #FFFFFF;
+	height: $height;
+	left: 0px;
+	line-height: $height;
+	margin-left: $margin;
+	margin-right: $margin;
+	padding-left: $padding;
+	padding-right: $padding;
+	position: fixed;
+	width: 100% - (2 * $margin + 2 * $padding);
 }
