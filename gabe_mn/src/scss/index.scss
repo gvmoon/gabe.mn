@@ -3,41 +3,34 @@
 //$icon-font-path: '~@nm/bootstrap-sass/assets/fonts/bootstrap/';
 //@import '~@nm/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
-$height: 2.5em;
-$margin: 5%;
-$padding: 1.25%;
-$bgColor: #121212;
+@import '~@scss/variables.scss';
+@import '~@scss/mixins/font_face.scss';
+
+@include font-face(KeplerStdBoldItDisp, '~@font/KeplerStd-BoldItDisp', null, null, eot ttf woff);
+@include font-face(KeplerStdLight, '~@font/KeplerStd-Light', null, null, eot ttf woff);
+@include font-face(KeplerStdLightIt, '~@font/KeplerStd-LightIt', null, null, eot ttf woff);
 
 body {
 	background-color: #1A1A1A;
 	margin: 0px;
 	width: 100vw;
-
-	& > .container {
-		background-color: $bgColor;
-		margin-left: $margin;
-		margin-right: $margin;
-
-		& > main {
-			color: white;
-			margin-top: $height;
-			padding: $padding;
-			width: 100% - 2 * $padding;
-		}
-	}
 }
 
 footer,
 header {
-	background-color: $bgColor;
-	color: #FFFFFF;
-	height: $height;
+	background-color: $primaryBgColor;
+	color: $primaryFontColor;
+	height: $navHeight;
 	left: 0px;
-	line-height: $height;
-	margin-left: $margin;
-	margin-right: $margin;
-	padding-left: $padding;
-	padding-right: $padding;
+	line-height: $navHeight;
+	padding-left: $containerPadding;
+	padding-right: $containerPadding;
 	position: fixed;
-	width: 100% - (2 * $margin + 2 * $padding);
+	width: 100% - (2 * $containerPadding);
+
+	@media (min-width: 1200px) {
+		margin-left: $containerMargin;
+		margin-right: $containerMargin;
+		width: 100% - (2 * $containerMargin + 2 * $containerPadding);
+	}
 }

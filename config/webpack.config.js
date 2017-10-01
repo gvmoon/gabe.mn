@@ -1,6 +1,5 @@
 const PROJECT_ROOT = 'gabe_mn';
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 function resolve(...loc) {
 	return path.resolve(PROJECT_ROOT, ...loc);
@@ -14,8 +13,20 @@ module.exports = {
 	module: {
 		rules: [{
 			test: /\.vue/,
-			use: ['vue-loader']
-		}, {
+			use: [{
+				loader: 'babel-loader',
+				options: {
+					presets: [
+						['env', {
+							targets: {
+								browsers: ["last 2 versions", "safari >= 7"]
+							}
+						}]
+					]
+				}
+			},
+			'vue-loader'
+		]}, {
 			test: /\.scss/,
 			use: ['style-loader', {
 				loader: 'css-loader',
@@ -28,24 +39,20 @@ module.exports = {
 			use: [{
 				loader: 'file-loader',
 				options: {
-					outputPath: 'fonts/'
+					outputPath: 'fonts/',
+					publicPath: 'static/'
 				}
 			}]
 		}]
 	},
 	output: {
 		filename: 'js/[name].js',
-		path: resolve('static', 'dist')
+		path: resolve('static')
 	},
-	plugins: [
-		new CopyWebpackPlugin([{ 
-			from: resolve('src', 'img'),
-			to: 'img'
-		}])
-	],
 	resolve: {
 		alias: {
 			'@components': resolve('src', 'components'),
+			'@font': resolve('src', 'font'),
 			'@nm': path.resolve('node_modules'),
 			'@scss': resolve('src', 'scss')
 		},

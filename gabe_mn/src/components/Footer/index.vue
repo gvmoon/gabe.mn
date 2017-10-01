@@ -15,8 +15,10 @@
 </template>
 
 <style lang='scss'>
+@import '~@scss/variables.scss';
+
 footer {
-	border-top: 2px solid #BFBFBF;
+	border-top: $primaryBorder;
 	bottom: 0px;
 }
 </style>

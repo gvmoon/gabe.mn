@@ -20,12 +20,10 @@
 </template>
 
 <style lang='scss'>
-$height: 2.5em;
-$margin: 5%;
-$padding: 1.25%;
+@import '~@scss/variables.scss';
 
 header {
-	border-bottom: 2px solid #BFBFBF;
+	border-bottom: $primaryBorder;
 	top: 0px;
 
 	& > nav {
@@ -38,7 +36,7 @@ header {
 				$imgHeight: 1.125em;
 
 				height: $imgHeight;
-				margin-top: ($height - $imgHeight) / 2;
+				margin-top: ($navHeight - $imgHeight) / 2;
 			}
 		}
 	}
