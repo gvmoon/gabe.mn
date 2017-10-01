@@ -1,12 +1,12 @@
 <template>
 	<nav role='nav'>
-		<div class='nav-left'>
+		<div class='gmn-nav-left'>
 			<slot name='left'></slot>
 		</div>
-		<div class='nav-center'>
+		<div class='gmn-nav-center'>
 			<slot name='center'></slot>
 		</div>
-		<div class='nav-right'>
+		<div class='gmn-nav-right'>
 			<slot name='right'></slot>
 		</div>
 	</nav>
@@ -27,19 +27,18 @@ nav {
 		float: left;
 	}
 
-	& > .nav-center{
+	& > .gmn-nav-center{
 		text-align: center;
 		width: 50%;
 	}
 
-	& > .nav-left,
-	& > .nav-right {
+	& > .gmn-nav-left,
+	& > .gmn-nav-right {
 		width: 25%;
 	}
 
-	& > .nav-right {
+	& > .gmn-nav-right {
 		text-align: right;
 	}
 }
 </style>
-

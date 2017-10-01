@@ -27,7 +27,7 @@ header {
 	top: 0px;
 
 	& > nav {
-		& > .nav-right {
+		& > .gmn-nav-right {
 			a:first-child {
 				margin-right: .25em;
 			}

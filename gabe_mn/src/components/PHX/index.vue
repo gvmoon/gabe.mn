@@ -1,5 +1,5 @@
 <template>
-  <GMN_Content img='static/img/jpg/bridge.jpg' title='Gabe Moon'>
+  <GMN_Content img='static/img/jpg/urban_bg.jpg' title='City of Phoenix'>
     <template slot='text'>
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
