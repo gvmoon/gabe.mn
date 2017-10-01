@@ -2,10 +2,10 @@
 	<header role='header'>
 		<GMN_Nav>
 			<template slot='left'>
-				<a href='/' target='_blank'>GVM</a>
+				<router-link :to="{name: 'home'}">GVM</router-link>
 			</template>
 			<template slot='center'>
-				<a href='/' target='_blank'>Gabriel Vincent Moon</a>
+				<router-link :to="{name: 'home'}">Gabriel Vincent Moon</router-link>
 			</template>
 			<template slot='right'>
 				<a href='http://twitter.com/gvmoon' target='_blank'>

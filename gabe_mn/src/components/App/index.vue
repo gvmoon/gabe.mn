@@ -1,9 +1,7 @@
 <template>
 	<div class='container'>
 		<GMN_Header></GMN_Header>
-		<main role='main'>
-		Test
-		</main>
+		<router-view></router-view>
 		<GMN_Footer></GMN_Footer>
 	</div>
 </template>
@@ -14,7 +12,7 @@
 .container {
 	background-color: $primaryBgColor;
 	min-height: calc(100vh - #{2 * $navHeight});
-	
+
 	@media (min-width: 1200px) {
 		margin-left: $containerMargin;
 		margin-right: $containerMargin;
