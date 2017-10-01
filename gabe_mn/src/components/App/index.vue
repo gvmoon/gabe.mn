@@ -30,7 +30,7 @@
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter, .fade-leave-to {
   opacity: 0
 }
 
@@ -52,9 +52,6 @@
 		width: 100% - 2 * $containerPadding;
 
     & > nav.gmn-links {
-			position: absolute;
-			bottom: 0px;
-
       & > a {
         color: #FFFFFF;
         float: left;
