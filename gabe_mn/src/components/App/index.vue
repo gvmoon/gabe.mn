@@ -9,17 +9,22 @@
 </template>
 
 <style lang='scss'>
-$margin: 5%;
+@import '~@scss/variables.scss';
 
-div.container {
-	background-color: #121212;
-	height: 100%;
-	margin-left: $margin;
-	margin-right: $margin;
+.container {
+	background-color: $primaryBgColor;
+	min-height: calc(100vh - #{2 * $navHeight});
+	
+	@media (min-width: 1200px) {
+		margin-left: $containerMargin;
+		margin-right: $containerMargin;
+	}
 
 	& > main {
-		height: 100%;
-		width: 100%;
+		color: $primaryFontColor;
+		margin-top: $navHeight;
+		padding: $containerPadding;
+		width: 100% - 2 * $containerPadding;
 	}
 }
 </style>

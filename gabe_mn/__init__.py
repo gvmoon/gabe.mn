@@ -10,7 +10,7 @@ def main(global_config, **settings):
         settings=settings
     )
 
-    config.add_static_view(name='static', path='./static/dist')
+    config.add_static_view(name='static', path='./static')
     config.include('pyramid_jinja2')
     config.scan()
 

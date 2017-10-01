@@ -9,7 +9,8 @@
 coverage.xml
 build/
 node_modules/
-dist/
+gabe_mn/static/js
+gabe_mn/static/fonts
 .tox/
 nosetests.xml
 env*/

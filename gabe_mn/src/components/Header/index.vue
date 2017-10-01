@@ -1,78 +1,42 @@
 <template>
 	<header role='header'>
-		<nav role='nav'>
-			<div class='nav-left'>
+		<GMN_Nav>
+			<template slot='left'>
 				<a href='/' target='_blank'>GVM</a>
-			</div>
-			<div class='nav-center'>
+			</template>
+			<template slot='center'>
 				<a href='/' target='_blank'>Gabriel Vincent Moon</a>
-			</div>
-			<div class='nav-right'>
+			</template>
+			<template slot='right'>
 				<a href='http://twitter.com/gvmoon' target='_blank'>
 					<img src='static/img/svg/twitter_icon.svg'>
 				</a>
 				<a href='http://instagram.com/leperprint' target='_blank'>
 					<img src='static/img/svg/instagram_icon.svg'>
 				</a>
-			</div>
-		</nav>
+			</template>
+		</GMN_Nav>
 	</header>
 </template>
 
 <style lang='scss'>
-$height: 2.5em;
-$margin: 5%;
-$padding: 1.25%;
+@import '~@scss/variables.scss';
 
 header {
-	background-color: #121212;
-	border-bottom: 2px solid #BFBFBF;
-	height: $height;
-	left: 0px;
-	line-height: $height;
-	margin-left: $margin;
-	margin-right: $margin;
-	padding-left: $padding;
-	padding-right: $padding;
-	position: fixed;
+	border-bottom: $primaryBorder;
 	top: 0px;
-	width: 100% - (2 * $margin + 2 * $padding);
-
-	a {
-		color: #FFFFFF;
-		text-decoration: none;
-	}
 
 	& > nav {
-		display: inline-block;
-		width: 100%;
-
-		& > div {
-			float: left;
-		}
-
-		& > .nav-center{
-			text-align: center;
-			width: 50%;
-		}
-
-		& > .nav-left,
 		& > .nav-right {
-			width: 25%;
-		}
-
-		& > .nav-right {
-			text-align: right;
-
 			a:first-child {
 				margin-right: .25em;
 			}
 
 			img {
-				$imgHeight: 1em;
+				$imgHeight: 1.125em;
 
 				height: $imgHeight;
-				margin-top: ($height - $imgHeight) / 2;
+				margin-top: ($navHeight - $imgHeight) / 2;
 			}
 		}
 	}
@@ -80,7 +44,11 @@ header {
 </style>
 
 <script>
-export default {
+import GMN_Nav from '@components/Nav';
 
+export default {
+	components: {
+		GMN_Nav
+	}
 };
 </script>
