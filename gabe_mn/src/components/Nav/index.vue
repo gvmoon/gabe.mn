@@ -15,6 +15,7 @@
 <style lang='scss'>
 nav {
 	display: inline-block;
+	font-style: italic;
 	width: 100%;
 
 	a {

@@ -35,7 +35,7 @@ header {
 			}
 
 			img {
-				$imgHeight: 1em;
+				$imgHeight: 1.125em;
 
 				height: $imgHeight;
 				margin-top: ($height - $imgHeight) / 2;

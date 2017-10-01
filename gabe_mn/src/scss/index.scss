@@ -9,21 +9,22 @@ $padding: 1.25%;
 $bgColor: #121212;
 
 body {
+	background-color: #1A1A1A;
+	margin: 0px;
+	width: 100vw;
+
 	& > .container {
 		background-color: $bgColor;
-		height: 100%;
 		margin-left: $margin;
 		margin-right: $margin;
 
 		& > main {
+			color: white;
 			margin-top: $height;
-			width: 100%;
+			padding: $padding;
+			width: 100% - 2 * $padding;
 		}
 	}
-	background-color: #1A1A1A;
-	height: 100vh;
-	margin: 0px;
-	width: 100vw;
 }
 
 footer,
