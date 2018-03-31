@@ -30,6 +30,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class='col-xs-12 col-md-8'>
+                        <Carousel
+                            autoplay='true'
+                            paginationColor='white'
+                            paginationActiveColor='#687886'
+                            perPage='1'
+                            loop=true
+                            class='gmn-carousel'
+                        >
+                            <Slide>
+                                <img src='/static/img/jpg/3d_bg.jpg' />
+                            </Slide>
+                            <Slide>
+                                <img src='/static/img/jpg/3d_in.jpg' />
+                            </Slide>
+                            <Slide>
+                                <img src='/static/img/jpg/basic.jpg' />
+                            </Slide>
+                        </Carousel>
+                    </div>
                 </div>
             </div>
         </template>
@@ -50,12 +70,14 @@
 </style>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
+
 import AppContent from '@components/Content';
 import MainLinks from '@components/MainLinks';
 
 export default {
     components: {
-        AppContent, MainLinks
+        AppContent, Carousel, MainLinks, Slide
     }
 };
 </script>
