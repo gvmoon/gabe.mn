@@ -1,4 +1,6 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 function resolve(...args) {
 	return path.resolve(__dirname, '..', 'gabe_mn', ...args);
@@ -9,6 +11,7 @@ module.exports = {
 	entry: {
 		index: resolve('src', 'js', 'index.js')
 	},
+	mode: 'development',
 	module: {
 		rules: [{
 			test: /\.vue/,
@@ -16,7 +19,7 @@ module.exports = {
 				loader: 'babel-loader',
 				options: {
 					presets: [
-						['env', {
+						['@babel/env', {
 							targets: {
 								browsers: ["last 2 versions", "safari >= 7"]
 							}
@@ -49,6 +52,15 @@ module.exports = {
 		filename: 'js/[name].js',
 		path: resolve('static')
 	},
+	plugins: [
+		new CleanWebpackPlugin(resolve('static'), {
+			root: resolve()
+		}),
+		new CopyWebpackPlugin([{
+			from: resolve('src', 'img'),
+			to: resolve('static', 'img')
+		}])
+	],
 	resolve: {
 		alias: {
 			'@components': resolve('src', 'components'),

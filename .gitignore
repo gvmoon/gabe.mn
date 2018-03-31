@@ -23,3 +23,5 @@ Data.fs*
 .DS_Store
 coverage
 test
+*.log
+static
