@@ -32,11 +32,11 @@
                     </div>
                     <div class='col-xs-12 col-md-8'>
                         <Carousel
-                            autoplay='true'
+                            :autoplay='true'
                             paginationColor='white'
                             paginationActiveColor='#687886'
-                            perPage='1'
-                            loop=true
+                            :perPage='1'
+                            :loop='true'
                             class='gmn-carousel'
                         >
                             <Slide>

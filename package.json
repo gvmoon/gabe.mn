@@ -17,17 +17,36 @@
 	"bugs": {
 		"url": "https://github.com/gvmoon/gabe.mn/issues"
 	},
+	"babel": {
+		"presets": [
+			[
+				"@babel/preset-env",
+				{
+					"targets": {
+						"browsers": [
+							"last 2 versions",
+							"ie >= 11"
+						]
+					}
+				}
+			]
+		]
+	},
 	"homepage": "https://github.com/gvmoon/gabe.mn#readme",
 	"dependencies": {
 		"@babel/core": "^7.0.0-beta.42",
 		"@babel/preset-env": "^7.0.0-beta.42",
+		"autoprefixer": "^8.2.0",
 		"axios": "^0.18.0",
 		"babel-loader": "^8.0.0-beta",
+		"babel-polyfill": "^6.26.0",
 		"clean-webpack-plugin": "^0.1.19",
 		"copy-webpack-plugin": "^4.5.1",
 		"css-loader": "^0.28.11",
 		"file-loader": "^1.1.11",
 		"node-sass": "^4.8.3",
+		"postcss-loader": "^2.1.3",
+		"query-string": "^6.0.0",
 		"sass-loader": "^6.0.7",
 		"style-loader": "^0.20.3",
 		"velocity-animate": "^1.5.1",
