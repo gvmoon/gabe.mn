@@ -1,17 +1,9 @@
 @import '~@scss/variables.scss';
 
 .gmn-phx-header {
-    display: flex;
-    color: #BFBFBF;
-
-    & > .gmn-home-header-left {
-        align-items: center;
-        color: $primaryColor;
-        display: flex;
-        font-family: Helvetica;
-        font-size: 2em;
-        justify-content: center;
-    }
+    color: $primaryColor;
+    font-family: Helvetica;
+    font-size: 2em;
 
     & > .gmn-home-header-right {
         // Same as bootstrap padding-left on column
