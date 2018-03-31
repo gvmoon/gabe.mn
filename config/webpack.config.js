@@ -1,12 +1,11 @@
-const PROJECT_ROOT = 'gabe_mn';
 const path = require('path');
 
-function resolve(...loc) {
-	return path.resolve(PROJECT_ROOT, ...loc);
+function resolve(...args) {
+	return path.resolve(__dirname, '..', 'gabe_mn', ...args);
 }
 
 module.exports = {
-	devtool: 'sourcemap',
+	devtool: 'source-map',
 	entry: {
 		index: resolve('src', 'js', 'index.js')
 	},
@@ -39,8 +38,9 @@ module.exports = {
 			use: [{
 				loader: 'file-loader',
 				options: {
+					name: '[name].[ext]',
 					outputPath: 'fonts/',
-					publicPath: 'static/'
+					publicPath: 'static/fonts/'
 				}
 			}]
 		}]
@@ -52,7 +52,6 @@ module.exports = {
 	resolve: {
 		alias: {
 			'@components': resolve('src', 'components'),
-			'@font': resolve('src', 'font'),
 			'@nm': path.resolve('node_modules'),
 			'@scss': resolve('src', 'scss')
 		},

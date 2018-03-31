@@ -1,31 +1,31 @@
 <template>
 	<footer role='footer'>
-		<GMN_Nav>
-			<template slot='left'>
-				<a href='skype:gabemoon?add'>gabemoon</a>
-			</template>
-			<template slot='center'>
-				<a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
-			</template>
-			<template slot='right'>
+		<AppNav>
+			<a href='skype:gabemoon?add'>gabemoon</a>
+			<a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
+			<div class='gmn-copyright'>
 				&copy; {{ copyrightText }}
-			</template>
-		</GMN_Nav>
+			</div>
+		</AppNav>
 	</footer>
 </template>
 
 <style lang='scss'>
-@import '~@scss/variables.scss';
-
 footer {
-	border-top: $primaryBorder;
-	bottom: 0px;
+	// .0125rem = 2px if font-size = 16px
+	border-top: .0125rem solid #BFBFBF;
+	bottom: 0;
+	font-style: italic;
+
+	.gmn-copyright {
+		user-select: none;
+	}
 }
 </style>
 
 <script>
 import axios from 'axios';
-import GMN_Nav from '@components/Nav';
+import AppNav from '@components/Nav';
 
 export default {
 	created () {
@@ -34,23 +34,21 @@ export default {
 		axios.get('/api/copyright')
 			.then( (resp) => {
 				const data = resp.data;
-				let copyrightText = data.start;
 
-				if (data.start < data.end) {
-					copyrightText += ` - ${data.end}`;
-				}
-				else if (data.start > data.end) {
+				if (data.start > data.end) {
 					throw 'Copyright date range invalid.';
 				}
 
-				self.copyrightText = copyrightText;
+				// The 'hyphen' in the string below is actually an en-dash
+				// &ndash;
+				self.copyrightText = `${data.start}–${data.end}`;
 			})
 			.catch( (error) => {
 				throw error;
 			});
 	},
 	components: {
-		GMN_Nav
+		AppNav
 	},
 	data () {
 		return {

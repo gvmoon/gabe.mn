@@ -1,0 +1,69 @@
+Hey Greg
+
+
+We should probably link to VIMEO instead of trying to embed the video files using HTML like they are now.
+
+I would like the videos to loop and autoplay.
+
+You should be able to add ?autoplay=1 to the end of the URL:
+https://help.vimeo.com/hc/en-us/articles/115004485728-Autoplaying-and-looping-embedded-videos
+
+Here is the embed code for the MAIN REEL:
+<iframe src="https://player.vimeo.com/video/241723499?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Here is the embed code for the MAIN REEL:
+<iframe src="https://player.vimeo.com/video/259968469?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+Project Divs on the Main Page:
+
+The 6 images for the background-image are named: 'city_of_phoenix_bg.png' etc
+
+If you could just get in the PNGs/JPGs for now that would be great!
+
+city_of_phoenix_bg.png
+school_of_motion_bg.png
+bitcoin_expounded_bg.png
+counter_strike_bg.png
+protect_the_net_bg.png
+experimental_bg.png
+
+We can mess with the hover states and GIFs later.
+
+
+Projects page:
+
+We need a slider for the images maybe one of these? Just need something simple:
+
+https://plainjs.com/javascript/plugins/ideal-image-slider-28/
+
+https://plainjs.com/javascript/plugins/slider-29/
+
+Use the images city_of_phoenix0.png etc.
+
+
+Fonts are included in the _font folder.
+
+I think previously I was using web hosting for DIN in particular:
+
+<style type="text/css">
+    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7c43f159-7a6a-44bc-8331-4ec379623302&fontids=1475728");
+    @font-face{
+        font-family:"DIN_1451 LT W04 Engschrift";
+        src:url("Fonts/1475728/850bb6eb-cf3d-4a30-a99a-6fefb27ed003.eot?#iefix");
+        src:url("Fonts/1475728/850bb6eb-cf3d-4a30-a99a-6fefb27ed003.eot?#iefix") format("eot"),url("Fonts/1475728/dd249adc-d304-4402-a800-a60c0dd08605.woff2") format("woff2"),url("Fonts/1475728/b1aea2e1-11ce-4782-a820-43fa654e0d96.woff") format("woff"),url("Fonts/1475728/1120c795-358e-45bb-a96f-d29158b31052.ttf") format("truetype");
+    }
+</style>
+
+You will have to make sure the links work.
+
+Hmmm I might buy the Kepler fonts as well, but they are in the Kepler folder for now:
+Kepler Std Bold Italic Display
+Kepler Std Light
+Kepler Std Light Italic
+
+Thanks man!
+
+It doesn't have to be exact cuz I'll probably end up tweaking the CSS a bunch anyways haha.
+
+I also have a concern about how the page will scale responsively on the vertical axis when there is such little content to display on the homepage. (How does the main DIV scale to fit the entire screen at aspect ratios that are toaller than wide?) Perhaps the solution is to vertically center the content? We can talk about that later.

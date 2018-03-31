@@ -1,60 +1,47 @@
 <template>
-  <div class='gmn-content'>
-    <div class='gmn-content-top'>
-
+    <div class='gmn-content'>
+        <div class='gmn-content-top'>
+            <iframe
+                src='https://player.vimeo.com/video/241723499?autoplay=0'
+                frameborder='0'
+                webkitAllowFullScreen mozallowfullscreen allowFullScreen
+            ></iframe>
+        </div>
+        <slot name="middle" />
+        <slot name="bottom" />
     </div>
-    <div class='gmn-content-bottom'>
-      <div>
-        <h3>{{ title }}</h3>
-        <p><slot name='text'></slot></p>
-      </div>
-      <div>
-        <img :src='img' />
-      </div>
-    </div>
-  </div>
 </template>
 
 <style lang='scss' scoped>
-@import '~@scss/variables.scss';
 
-div.gmn-content {
-  display: inline-block;
+.gmn-content {
+    // .gmn-content-top styles from http://embedresponsively.com/
+    & > .gmn-content-top {
+        height: 0;
+        margin-bottom: 1em;
+        max-width: 100%;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
 
-  & > div {
-    display: inline-block;
-    width: 100%;
-
-
-    &.gmn-content-bottom {
-      & > div {
-        float: left;
-        width: 50%;
-
-      	@media (max-width: 1199px) {
-      		width: 100%;
-      	}
-
-        & > h3 {
-          margin: 0px;
+        & iframe,
+        & object,
+        & embed {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
         }
-
-        & > img {
-          height: 100%;
-          width: 100%;
-        }
-
-        & > p {
-          color: $blueTextColor;
-        }
-      }
     }
-  }
 }
 </style>
 
 <script>
 export default {
-  props: ['img', 'title']
+  props: ['img', 'title'],
+  mounted() {
+
+  }
 };
 </script>

@@ -1,10 +1,9 @@
-$blueTextColor: #486682;
+$primaryColor: #BFBFBF;
+$primaryBgColor: #1A1A1A;
 
-$containerMargin: 5%;
-$containerPadding: 1.25%;
+// .0125rem = 2px if font-size = 16px
+$primaryBorder: .0125rem solid $primaryColor;
 
-$navHeight: 2.5em;
+$navHeight: 2em;
 
-$primaryBgColor: #121212;
-$primaryBorder: 2px solid #BFBFBF;
-$primaryFontColor: #FFFFFF;
+$wrapperBgColor: #000000;
