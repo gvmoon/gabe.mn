@@ -7,7 +7,8 @@
                 webkitAllowFullScreen mozallowfullscreen allowFullScreen
             ></iframe>
         </div>
-        <slot />
+        <slot name='middle' />
+        <slot name='bottom' />
     </div>
 </template>
 

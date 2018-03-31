@@ -14,6 +14,8 @@ def main(global_config, **settings):
     config.include('pyramid_jinja2')
     config.scan()
 
+    config.add_route('app', '/*subpath', path_info='/(?!api)')
+
     return config.make_wsgi_app()
 
 
