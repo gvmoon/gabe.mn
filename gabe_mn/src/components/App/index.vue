@@ -22,7 +22,10 @@ import AppFooter from '@components/Footer';
 import AppHeader from '@components/Header';
 import AppMain from '@components/Main';
 
+import beforeCreate from './js/before-create';
+
 export default {
+	beforeCreate,
 	components: {
 		AppFooter,
 		AppHeader,

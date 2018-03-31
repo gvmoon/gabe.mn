@@ -1,6 +1,7 @@
 import App from '@components/App';
 import Home from '@components/Home';
-import Phoenix from '@components/PHX';
+import NotFound from '@components/NotFound';
+import Phoenix from '@components/Phx';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
@@ -14,6 +15,9 @@ const routes = [{
 	component: Phoenix,
 	name: 'phx',
 	path: '/phx'
+}, {
+	path: '*',
+	component: NotFound
 }];
 
 const router = new VueRouter({

@@ -1,7 +1,11 @@
 .h-font-family-helvetica {
-    font-family: Helvetica;
+    font-family: Helvetica !important;
 }
 
 .h-font-style-italic {
-    font-style: italic;
+    font-style: italic !important;
+}
+
+.h-height-auto {
+    height: auto !important;
 }
