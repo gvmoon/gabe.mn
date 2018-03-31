@@ -1,0 +1,36 @@
+@import '~@scss/variables.scss';
+
+.gmn-home-header {
+    display: flex;
+    color: #BFBFBF;
+
+    & > .gmn-home-header-left {
+        align-items: center;
+        color: $primaryColor;
+        display: flex;
+        font-family: Helvetica;
+        font-size: 2em;
+        justify-content: center;
+    }
+
+    & > .gmn-home-header-right {
+        // Same as bootstrap padding-left on column
+        margin-left: 15px;
+
+        & > .gmn-home-header-right-subtext {
+            color: #FFAE71;
+        }
+    }
+}
+
+.gmn-home-content {
+    color: #BFBFBF;
+}
+
+.gmn-home-skills {
+    $margin: .5em;
+
+    color: $secondaryColor;
+    margin-bottom: $margin;
+    margin-top: $margin;
+}

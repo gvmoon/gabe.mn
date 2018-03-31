@@ -1,0 +1,62 @@
+@import '~@scss/variables.scss';
+@import './scss/mixins/font_face.scss';
+@import './scss/bootstrap.scss';
+@import './scss/helpers.scss';
+
+@include font-face(KeplerStdBoldItDisp, './scss/fonts/KeplerStd-BoldItDisp', null, null, eot ttf woff);
+@include font-face(KeplerStdLight, './scss/fonts/KeplerStd-Light', null, null, eot ttf woff);
+@include font-face(KeplerStdLightIt, './scss/fonts/KeplerStd-LightIt', null, null, eot ttf woff);
+
+$wrapperHorizontalMargin: 5%;
+$wrapperMargin: 0 $wrapperHorizontalMargin;
+
+html {
+	height: 100vh;
+	width: 100vw;
+}
+
+body {
+	background-color: $primaryBgColor;
+	color: $primaryColor;
+	font-family: 'KeplerStd-Light';
+	font-size: 15px;
+	height: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	width: 100%;
+
+	& > .wrapper {
+		background-color: $wrapperBgColor;
+		height: 100%;
+		margin: $wrapperMargin;
+		position: relative;
+
+		& > footer,
+		& > header {
+			height: $navHeight;
+			padding: .25em .75em;
+			position: fixed;
+			width: 100% - 2 * $wrapperHorizontalMargin;
+		}
+	}
+
+	a {
+		color: $primaryColor;
+		text-decoration: none;
+	}
+}
+
+@media(max-width: 937px) {
+	body {
+		& > .wrapper {
+			margin: 0;
+
+			& > footer,
+			& > header {
+				width: 100%;
+			}
+		}
+	}
+}
