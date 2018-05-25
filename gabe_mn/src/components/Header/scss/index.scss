@@ -1,18 +1,20 @@
 header {
+    
     @import '~@scss/variables.scss';
     border-bottom: $primaryBorder;
 
+
     .gmn-social-media-container {
-        height: 100%;
 
         a {
             height: 100%;
 
             img {
-                height: 75%;
+                height: 1.2em;
+                padding: 0.1em;
 
                 &:not(:first-child) {
-                    margin-left: 1em;
+                    margin-left: 0em;
                 }
             }
         }

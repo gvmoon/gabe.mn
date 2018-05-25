@@ -1,9 +1,10 @@
 @import '~@scss/variables.scss';
 
 .gmn-link {
-    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-size: cover;
     font-style: italic;
-    height: 7.5em;
+    height: 9.44em;
     position: relative;
     text-align: center;
 
@@ -34,7 +35,7 @@
 
     & > .gmn-link-overlay {
         background-color: black;
-        opacity: .85;
+        opacity: .0;
         transition-duration: 1s;
         transition-property: opacity;
 
@@ -44,7 +45,8 @@
     }
 
     & > .gmn-link-gif {
-        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-size: cover;
         visibility: hidden;
     }
 

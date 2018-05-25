@@ -9,13 +9,13 @@
         color: $primaryColor;
         display: flex;
         font-family: Helvetica;
-        font-size: 2em;
+        font-size: 10em;
         justify-content: center;
     }
 
     & > .gmn-home-header-right {
         // Same as bootstrap padding-left on column
-        margin-left: 15px;
+        margin-left: 1em;
 
         & > .gmn-home-header-right-subtext {
             color: #FFAE71;
@@ -28,9 +28,19 @@
 }
 
 .gmn-home-skills {
-    $margin: .5em;
+    $margin: 1em;
 
     color: $secondaryColor;
     margin-bottom: $margin;
     margin-top: $margin;
+}
+
+.gmn-description {
+    padding: 1.25em;
+}
+
+.gmn-project-content {
+    img {
+        width: 100%;
+    }
 }

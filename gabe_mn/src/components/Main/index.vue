@@ -12,9 +12,10 @@
 .gmn-main {
     height: calc(100% - #{2 * $navHeight});
     max-height: calc(100% - #{2 * $navHeight});
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: overlay;
     position: absolute;
-    top: $navHeight;
+    top: $navHeight - .08em;
     width: 100%;
 }
 </style>

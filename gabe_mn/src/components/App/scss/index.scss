@@ -7,7 +7,7 @@
 @include font-face(KeplerStdLight, './scss/fonts/KeplerStd-Light', null, null, eot ttf woff);
 @include font-face(KeplerStdLightIt, './scss/fonts/KeplerStd-LightIt', null, null, eot ttf woff);
 
-$wrapperHorizontalMargin: 5%;
+$wrapperHorizontalMargin: 8%;
 $wrapperMargin: 0 $wrapperHorizontalMargin;
 
 html {
@@ -18,7 +18,7 @@ html {
 body {
 	background-color: $primaryBgColor;
 	color: $primaryColor;
-	font-family: 'KeplerStd-Light';
+	font-family: 'KeplerStd-BoldItDisp';
 	font-size: 15px;
 	height: 100%;
 	max-height: 100%;
@@ -36,7 +36,10 @@ body {
 		& > footer,
 		& > header {
 			height: $navHeight;
-			padding: .25em .75em;
+			padding-bottom: .25em;
+			padding-left: 1.25em;
+			padding-right: 1.25em;
+			padding-top: 0.1em;
 			position: fixed;
 			width: 100% - 2 * $wrapperHorizontalMargin;
 		}
@@ -46,6 +49,18 @@ body {
 		color: $primaryColor;
 		text-decoration: none;
 	}
+}
+
+footer {
+	background-color: #1A1A1A;
+}
+
+header {
+	background-color: #1A1A1A;
+	border-color: #ffffff;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	z-index: 99;
 }
 
 @media(max-width: 937px) {

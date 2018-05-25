@@ -4,7 +4,7 @@
 			<a href='skype:gabemoon?add'>gabemoon</a>
 			<a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
 			<div class='gmn-copyright'>
-				&copy; {{ copyrightText }}
+				&copy; 2018
 			</div>
 		</AppNav>
 	</footer>
