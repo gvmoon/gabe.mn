@@ -10,7 +10,7 @@
                             <div class='col-xs-12'>
                                 <div class='gmn-home-header'>
                                     <div class='gmn-home-header-left'>
-                                        <img src="static/img/svg/gvm_logo.svg" height="36em">
+                                        <img src="static/img/svg/gvm_logo.svg" height="32em">
                                     </div>
                                     <div class='gmn-home-header-right'>
                                         City of Phoenix
@@ -29,7 +29,7 @@
                         </div>
                         <div class='row gmn-home-content'>
                             <div class='col-xs-12'>
-                                Motion is to the 21st century what graphic design was to the 20th century. The knowledge I gained studying graphic design was invaluable to my development as a creative and moving forward into motion design was a no-brainer. As a proud computer nerd, I love utilizing the latest technology to solve complex problems for my clients and convey their ideas to the world. I am currently available for freelance work: <a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
+                                Phoenix, Arizona is home to more than 1.5 million people, with the greater metropolitan area being home to more than 4.5 million. Divided into fifteen unique districts, each urban village takes input from within their own communities on how their village will take shape. Through collaboration with village planners, a series of videos was developed utilizing motion graphic design to describe the role of urban planning in Phoenix. These were some of my first real motion design projects out of school and it was a great crash course in the process of completing a video series and working directly with a client.
                             </div>
                         </div>
                     </div>

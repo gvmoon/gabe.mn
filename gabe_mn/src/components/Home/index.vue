@@ -10,7 +10,7 @@
                             <div class='col-xs-12'>
                                 <div class='gmn-home-header'>
                                     <div class='gmn-home-header-left'>
-                                        <img src="static/img/svg/gvm_logo.svg" height="36em">
+                                        <img src="static/img/svg/gvm_logo.svg" height="32em">
                                     </div>
                                     <div class='gmn-home-header-right'>
                                         Gabriel Vincent Moon
@@ -29,7 +29,7 @@
                         </div>
                         <div class='row gmn-home-content'>
                             <div class='col-xs-12'>
-                                Motion is to the 21st century what graphic design was to the 20th century. The knowledge I gained studying graphic design was invaluable to my development as a creative and moving forward into motion design was a no-brainer. As a proud computer nerd, I love utilizing the latest technology to solve complex problems for my clients and convey their ideas to the world. I am currently available for freelance work: <a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
+                                Motion design is to the 21st century what graphic design was to the 20th century. I help local Arizona businesses to create compelling motion graphic experiences by bringing my knowledge and expertise in current design technologies and trends with a specific focus on designed video which helps them to creatively and effectively communicate their complex ideas. I am currently available for freelance jobs. Feel free to give me a shout: <a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
                             </div>
                         </div>
                     </div>
@@ -39,9 +39,16 @@
                 </div>
             </div>
         </template>
+        <template slot='bottom'>
+            <div class='container-fluid'>
+                <div class='row gmn-project-content'>
+                    <!--<img src="static/img/jpg/bridge.jpg">-->
+                </div>
+            </div>
+            <div class='col-xs-12'></div>
+        </template>
 </AppContent>
 </template>
-
 <style lang='scss'>
 @import './scss/index.scss';
 </style>
