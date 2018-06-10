@@ -36,10 +36,12 @@
 
             &.gmn-link-subtext {
                 color: $secondaryColor;
+                font-style: italic;
             }
 
             &.gmn-link-text {
                 font-size: 1.125em;
+                font-family: 'KeplerStd-BoldItDisp';
                 font-weight: bolder;
             }
         }

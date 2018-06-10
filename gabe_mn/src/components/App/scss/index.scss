@@ -3,9 +3,9 @@
 @import './scss/bootstrap.scss';
 @import './scss/helpers.scss';
 
-@include font-face(KeplerStdBoldItDisp, './scss/fonts/KeplerStd-BoldItDisp', null, null, eot ttf woff);
-@include font-face(KeplerStdLight, './scss/fonts/KeplerStd-Light', null, null, eot ttf woff);
-@include font-face(KeplerStdLightIt, './scss/fonts/KeplerStd-LightIt', null, null, eot ttf woff);
+@include font-face('KeplerStd-BoldItDisp', './scss/fonts/KeplerStd-BoldItDisp', bold, italic, eot ttf woff);
+@include font-face('KeplerStd-Light', './scss/fonts/KeplerStd-Light', null, null, eot ttf woff);
+@include font-face('KeplerStd-LightIt', './scss/fonts/KeplerStd-LightIt', null, null, eot ttf woff);
 
 $wrapperHorizontalMargin: 0%;
 $wrapperMargin: 0 $wrapperHorizontalMargin;
@@ -18,7 +18,7 @@ html {
 body {
 	background-color: $primaryBgColor;
 	color: $primaryColor;
-	font-family: 'KeplerStd-BoldItDisp';
+	font-family: 'KeplerStd-Light';
 	font-size: 15px;
 	height: 100%;
 	max-height: 100%;

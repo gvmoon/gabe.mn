@@ -32,7 +32,7 @@
                                 Motion design is to the 21st century what graphic design was to the 20th century. I help local Arizona businesses to create compelling motion graphic experiences by bringing my knowledge and expertise in current design technologies and trends with a specific focus on designed video which helps them to creatively and effectively communicate their complex ideas. I am currently available for freelance jobs. Feel free to give me a shout:
                             </div>
                         </div>
-                        <div class='row gmn-home-skills'>
+                        <div class='row gmn-email-link'>
                             <div class='col-xs-12'>
                                 <a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
                             </div>
