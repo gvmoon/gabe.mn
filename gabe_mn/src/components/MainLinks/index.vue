@@ -3,7 +3,7 @@
         <div class='row no-gutters'>
             <template v-for='link in links'>
                 <MainLink
-                    class='col-xs-12 col-md-6 col-lg-6 col-xl-4'
+                    class='col-xs-12 col-md-6 col-lg-4 col-xl-4'
                     :backgroundImage='link.bg'
                     :gif='link.gif'
                     :text='link.text'
