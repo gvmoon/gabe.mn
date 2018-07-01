@@ -1,8 +1,8 @@
 <template>
 	<div class='wrapper'>
-		<AppHeader />
-		<AppMain />
-		<AppFooter />
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
 	</div>
 </template>
 

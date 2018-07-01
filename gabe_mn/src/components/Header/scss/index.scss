@@ -1,11 +1,10 @@
 header {
     @import '~@scss/variables.scss';
-    border-bottom: $primaryBorder;
+    border-bottom: .0125rem solid #BFBFBF;
     font-family: "KeplerStd-BoldItDisp";
 
 
     .gmn-social-media-container {
-
         a {
             height: 100%;
 
