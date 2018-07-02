@@ -1,18 +1,19 @@
 header {
     @import '~@scss/variables.scss';
-    border-bottom: $primaryBorder;
+    border-bottom: .0125rem solid #BFBFBF;
+    font-family: "KeplerStd-BoldItDisp";
+
 
     .gmn-social-media-container {
-        height: 100%;
-
         a {
             height: 100%;
 
             img {
-                height: 75%;
+                height: 1.2em;
+                padding: 0.1em;
 
                 &:not(:first-child) {
-                    margin-left: 1em;
+                    margin-left: 0em;
                 }
             }
         }

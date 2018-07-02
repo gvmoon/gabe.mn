@@ -4,7 +4,7 @@
 			<a href='skype:gabemoon?add'>gabemoon</a>
 			<a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
 			<div class='gmn-copyright'>
-				&copy; {{ copyrightText }}
+				&copy; 2018
 			</div>
 		</AppNav>
 	</footer>
@@ -15,7 +15,7 @@ footer {
 	// .0125rem = 2px if font-size = 16px
 	border-top: .0125rem solid #BFBFBF;
 	bottom: 0;
-	font-style: italic;
+	font-family: 'KeplerStd-BoldItDisp';
 
 	.gmn-copyright {
 		user-select: none;

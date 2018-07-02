@@ -1,8 +1,8 @@
 <template>
 	<div class='wrapper'>
-		<AppHeader />
-		<AppMain />
-		<AppFooter />
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
 	</div>
 </template>
 
@@ -10,7 +10,7 @@
 @import './scss/index.scss';
 
 .fade-enter-active, .fade-leave-active {
-	transition: opacity .5s
+	transition: opacity .3s
 }
 .fade-enter, .fade-leave-to {
 	opacity: 0

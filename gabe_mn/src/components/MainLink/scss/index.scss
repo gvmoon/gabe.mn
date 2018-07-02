@@ -1,11 +1,24 @@
 @import '~@scss/variables.scss';
 
 .gmn-link {
-    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-size: cover;
     font-style: italic;
-    height: 7.5em;
+    height: 8em;
     position: relative;
     text-align: center;
+
+    @media (min-width: $small) {
+        height: 14em;
+    }
+
+    @media (min-width: $medium) {
+        height: 20em;
+    }
+
+    @media (min-width: $large) {
+        height: 12em;
+    }
 
     & > .gmn-link-content {
         align-items: center;
@@ -23,10 +36,12 @@
 
             &.gmn-link-subtext {
                 color: $secondaryColor;
+                font-style: italic;
             }
 
             &.gmn-link-text {
                 font-size: 1.125em;
+                font-family: 'KeplerStd-BoldItDisp';
                 font-weight: bolder;
             }
         }
@@ -34,7 +49,7 @@
 
     & > .gmn-link-overlay {
         background-color: black;
-        opacity: .85;
+        opacity: .0;
         transition-duration: 1s;
         transition-property: opacity;
 
@@ -44,7 +59,8 @@
     }
 
     & > .gmn-link-gif {
-        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-size: cover;
         visibility: hidden;
     }
 
@@ -55,4 +71,8 @@
         top: 0;
         width: 100%;
     }
+}
+
+.gmn-main {
+    background: #121212;
 }

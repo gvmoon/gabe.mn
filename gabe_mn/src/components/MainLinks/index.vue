@@ -3,7 +3,7 @@
         <div class='row no-gutters'>
             <template v-for='link in links'>
                 <MainLink
-                    class='col-xs-12 col-md-6 col-lg-4'
+                    class='col-xs-12 col-md-6 col-lg-4 col-xl-4'
                     :backgroundImage='link.bg'
                     :gif='link.gif'
                     :text='link.text'
@@ -23,41 +23,41 @@ export default {
     data () {
         return {
             links: [{
-                bg: '/static/img/png/city_of_phoenix_bg.png',
-                gif: '/static/img/gif/city_of_phoenix_anim.gif',
+                bg: '/static/img/jpg/phx_bg3.jpg',
+                gif: '/static/img/gif/phx_bg.gif',
                 subtext: 'animation, design, explainer, motion',
                 text: 'City of Phoenix',
                 to: { name: 'phx' }
             }, {
-                bg: '/static/img/png/school_of_motion_bg.png',
-                gif: '/static/img/gif/school_of_motion_anim.gif',
+                bg: '/static/img/jpg/som_bg3.jpg',
+                gif: '/static/img/gif/som_bg.gif',
                 subtext: '3d, animation, design, motion',
                 text: 'School of Motion',
-                to: { name: 'home' }
+                to: { name: 'som' }
             }, {
-                bg: '/static/img/png/bitcoin_expounded_bg.png',
-                gif: '/static/img/gif/experimental_anim.gif',
+                bg: '/static/img/jpg/btc_bg3.jpg',
+                gif: '/static/img/png/btc_bg.png',
                 subtext: 'animation, design, explainer, motion',
                 text: 'Bitcoin',
-                to: { name: 'home' }
+                to: { name: 'btc' }
             }, {
-                bg: '/static/img/png/counter_strike_bg.png',
-                gif: '/static/img/gif/counter_strike_anim.gif',
+                bg: '/static/img/jpg/cs_bg3.jpg',
+                gif: '/static/img/gif/cs_bg.gif',
                 subtext: 'animation, design, motion',
                 text: 'Counter-Strike',
-                to: { name: 'home' }
+                to: { name: 'cs' }
             }, {
-                bg: '/static/img/png/protect_the_net_bg.png',
-                gif: '/static/img/gif/experimental_anim.gif',
+                bg: '/static/img/jpg/ptn_bg3.jpg',
+                gif: '/static/img/gif/ptn_bg.gif',
                 subtext: 'animation, design, motion',
                 text: 'Protect the Net',
-                to: { name: 'home' }
+                to: { name: 'ptn' }
             }, {
-                bg: '/static/img/png/experimental_bg.png',
+                bg: '/static/img/jpg/exp_bg3.jpg',
                 gif: '/static/img/gif/experimental_anim.gif',
                 subtext: 'animation, design, motion',
                 text: 'Experimental',
-                to: { name: 'home' }
+                to: { name: 'exp' }
             }]
         }
     }

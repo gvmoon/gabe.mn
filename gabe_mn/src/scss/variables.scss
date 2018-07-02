@@ -1,12 +1,19 @@
 // $primaryColor: #BFBFBF;
 $primaryColor: #FFFFFF;
-$secondaryColor: #687886;
+$secondaryColor: #969696;
 
 $primaryBgColor: #1A1A1A;
 
 // .0125rem = 2px if font-size = 16px
 $primaryBorder: .0125rem solid $primaryColor;
 
-$navHeight: 2em;
+$navHeight: 2.55em;
 
-$wrapperBgColor: #000000;
+$wrapperBgColor: #121212;
+
+$leading: 1.2em;
+
+$small: 500px;
+$medium: 892px;
+$large: 1320px;
+$xlarge: 1690px;

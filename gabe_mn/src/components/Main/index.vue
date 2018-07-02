@@ -9,12 +9,13 @@
 <style lang='scss'>
 @import '~@scss/variables.scss';
 
+/*
 .gmn-main {
-    height: calc(100% - #{2 * $navHeight});
-    max-height: calc(100% - #{2 * $navHeight});
-    overflow: scroll;
-    position: absolute;
-    top: $navHeight;
+    overflow-x: hidden;
+    overflow-y: auto;
+    //position: absolute;
+    top: $navHeight - .08em;
     width: 100%;
 }
+*/
 </style>

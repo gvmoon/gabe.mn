@@ -1,16 +1,16 @@
 <template>
     <AppContent
-    video='https://player.vimeo.com/video/241723499?autoplay=0'
+        video='https://player.vimeo.com/video/241723499?autoplay=0'
     >
         <template slot='middle'>
             <div class='container-fluid'>
                 <div class='row'>
-                    <div class='col-xs-12 col-md-4'>
+                    <div class='col-xs-12 col-md-4 col-lg-4 no-padding gmn-description'>
                         <div class='row'>
                             <div class='col-xs-12'>
                                 <div class='gmn-home-header'>
                                     <div class='gmn-home-header-left'>
-                                        GVM
+                                        <img src="static/img/svg/gvm_logo.svg" height="32em">
                                     </div>
                                     <div class='gmn-home-header-right'>
                                         Gabriel Vincent Moon
@@ -23,31 +23,37 @@
                         </div>
                         <div class='row gmn-home-skills'>
                             <div class='col-xs-12'>
-                                3D, Animation, Design, Live, Motion, UX/UI, VFX, Web
-                                Animate, After Eects, Cinema 4D, Illustrator, Photoshop, XD
+                                2D, 3D, Animation, Design, Motion, Web</br>
+                                After Effects, Cinema 4D, Illustrator, Photoshop
                             </div>
                         </div>
                         <div class='row gmn-home-content'>
                             <div class='col-xs-12'>
-                                Motion design is to the 21st century what graphic design was to
-                                the 20th century. The knowledge I gained by studying graphic
-                                design was invaluable to my development as a creative and starting
-                                a freelance motion design business was a no-brainer. As a proud
-                                computer nerd, I love utilizing the latest technology to solve
-                                complex problems for my clients and convey their ideas to the
-                                world. Contact me with freelance opportunities: <a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
+                                Motion design is to the 21st century what graphic design was to the 20th century. I help local Arizona businesses to create compelling motion graphic experiences by bringing my knowledge and expertise in current design technologies and trends with a specific focus on designed video which helps them to creatively and effectively communicate their complex ideas. I am currently available for freelance jobs. Feel free to give me a shout:
+                            </div>
+                        </div>
+                        <div class='row gmn-email-link'>
+                            <div class='col-xs-12'>
+                                <a href='mailto:gabe@gabe.mn'>gabe@gabe.mn</a>
                             </div>
                         </div>
                     </div>
-                    <div class='col-xs-12 col-md-8'>
+                    <div class='col-xs-12 col-md-8 col-lg-8 no-padding'>
                         <MainLinks />
                     </div>
                 </div>
             </div>
         </template>
+        <template slot='bottom'>
+            <div class='container-fluid'>
+                <div class='row gmn-project-content'>
+                    <!--<img src="static/img/jpg/bridge.jpg">-->
+                </div>
+            </div>
+            <div class='col-xs-12'></div>
+        </template>
 </AppContent>
 </template>
-
 <style lang='scss'>
 @import './scss/index.scss';
 </style>
