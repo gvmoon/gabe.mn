@@ -57,3 +57,55 @@ body {
     text-decoration: none;
   }
 }
+
+.gmn-description {
+    padding: 1.25em;
+}
+
+.gmn-home-header {
+    display: flex;
+    color: #BFBFBF;
+
+    & > .gmn-home-header-left {
+        align-items: center;
+        color: $primaryColor;
+        display: flex;
+        font-family: Helvetica;
+        font-size: 10em;
+        justify-content: center;
+    }
+
+    & > .gmn-home-header-right {
+        // Same as bootstrap padding-left on column
+        margin-left: 1em;
+
+        & > .gmn-home-header-right-subtext {
+            color: #FFAE71;
+        }
+    }
+}
+
+.gmn-home-content {
+    color: #BFBFBF;
+}
+
+.gmn-home-skills {
+    $margin: 1em;
+
+    color: $secondaryColor;
+    margin-bottom: $margin;
+    margin-top: $margin;
+}
+
+.gmn-email-link {
+    color: $secondaryColor;
+    font-family: "KeplerStd-BoldItDisp";
+    margin-top: 1em;
+}
+
+.gmn-project-content {
+    img {
+        width: 100%;
+    }
+}
+
