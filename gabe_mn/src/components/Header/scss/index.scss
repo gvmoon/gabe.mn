@@ -1,7 +1,8 @@
 header {
     @import '~@scss/variables.scss';
-    border-bottom: .0125rem solid #BFBFBF;
+    border-bottom: .2em solid #FFFFFF;
     font-family: "KeplerStd-BoldItDisp";
+    z-index:10;
 
 
     .gmn-social-media-container {

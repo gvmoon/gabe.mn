@@ -13,7 +13,7 @@
 <style lang='scss'>
 footer {
 	// .0125rem = 2px if font-size = 16px
-	border-top: .0125rem solid #BFBFBF;
+	border-top: .2em solid #BFBFBF;
 	bottom: 0;
 	font-family: 'KeplerStd-BoldItDisp';
 

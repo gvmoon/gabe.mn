@@ -9,7 +9,7 @@
 
 body {
   align-items: center;
-  background-color: $primaryBgColor;
+  background-color: #1A1A1A;
   color: $primaryColor;
   display: flex;
   justify-content: center;
@@ -55,8 +55,10 @@ body {
   a {
     color: $primaryColor;
     text-decoration: none;
+
   }
 }
+
 
 .gmn-description {
     padding: 1.25em;
@@ -77,7 +79,7 @@ body {
 
     & > .gmn-home-header-right {
         // Same as bootstrap padding-left on column
-        margin-left: 1em;
+        margin-left: .6em;
 
         & > .gmn-home-header-right-subtext {
             color: #FFAE71;
@@ -86,7 +88,7 @@ body {
 }
 
 .gmn-home-content {
-    color: #BFBFBF;
+    color: #FFFFFF;
 }
 
 .gmn-home-skills {
@@ -98,9 +100,18 @@ body {
 }
 
 .gmn-email-link {
-    color: $secondaryColor;
+    color: #E67A7D;
     font-family: "KeplerStd-BoldItDisp";
     margin-top: 1em;
+
+    a {
+      color: #E67A7D;
+    }
+}
+
+.gmn-main {
+    background: #121212;
+    margin-top: -.15em;
 }
 
 .gmn-project-content {

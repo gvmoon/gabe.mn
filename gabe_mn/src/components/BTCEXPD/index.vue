@@ -1,6 +1,6 @@
 <template>
     <AppContent
-        video='https://player.vimeo.com/video/241723499?autoplay=1'
+        video='https://player.vimeo.com/video/241723499?autoplay=0'
     >
         <template slot='middle'>
             <div class='container-fluid'>

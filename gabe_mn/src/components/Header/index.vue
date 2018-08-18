@@ -2,11 +2,11 @@
 	<header role='header'>
 		<AppNav>
 			<div class='gmn-social-media-container'>
-				<a href='https://www.linkedin.com/in/gvmoon/' target='_blank'>
-					<img src='static/img/svg/linkedin_icon.svg'>
+				<a href='https://dribbble.com/gvmoon' target='_blank'>
+					<img src='static/img/svg/dribbble_icon.svg'>
 				</a>
-				<a href='http://soundcloud.com/leperprint' target='_blank'>
-					<img src='static/img/svg/soundcloud_icon.svg'>
+				<a href='https://mastodon.social/@print' target='_blank'>
+					<img src='static/img/svg/mastodon_icon.svg'>
 				</a>
 				<a href='https://vimeo.com/gvmoon' target='_blank'>
 					<img src='static/img/svg/vimeo_icon.svg'>
@@ -28,7 +28,7 @@
 				</a>
 			</div>
 		</AppNav>
-	</header>
+</header>
 </template>
 
 <style lang='scss'>
