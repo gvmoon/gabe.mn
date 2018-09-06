@@ -1,6 +1,6 @@
 <template>
     <nav class='container-fluid no-padding'>
-        <div class='row no-gutters'>
+        <div class='row'>
             <template v-for='link in links'>
                 <MainLink
                     class='col-xs-12 col-md-6 col-lg-4 col-xl-4'
