@@ -5,38 +5,15 @@
         <template slot='middle'>
             <div class='container-fluid'>
                 <div class='row gmn-project-content'>
-                    <img src="static\img\png\city_of_phoenix0.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix1.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix2.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix3.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix4.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix5.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix6.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix7.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix8.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix9.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\ptn0.png" alt="Protect the Net">
+                    <img src="static\img\png\ptn1.png" alt="Protect the Net">
+                    <img src="static\img\png\ptn2.png" alt="Protect the Net">
+                    <img src="static\img\png\ptn3.png" alt="Protect the Net">
+                    <img src="static\img\png\ptn4.png" alt="Protect the Net">
+                    <img src="static\img\png\ptn5.png" alt="Protect the Net">
+                    <img src="static\img\png\ptn6.png" alt="Protect the Net">
                 </div>
             </div>
-            <!--<div class='col-xs-12 col-md-12'>
-                <Carousel
-                    :autoplay='true'
-                    paginationColor='white'
-                    paginationActiveColor='#687886'
-                    :perPage='1'
-                    :loop='true'
-                    class='gmn-carousel'
-                >
-                    <Slide>
-                        <img src='/static/img/jpg/3d_bg.jpg' />
-                    </Slide>
-                    <Slide>
-                        <img src='/static/img/jpg/3d_in.jpg' />
-                    </Slide>
-                    <Slide>
-                        <img src='/static/img/jpg/basic.jpg' />
-                    </Slide>
-                </Carousel>
-            </div>-->
             <div class='col-xs-12'></div>
         </template>
         <template slot='bottom'>
@@ -50,9 +27,9 @@
                                         <img src="static/img/svg/gvm_logo.svg" height="32em">
                                     </div>
                                     <div class='gmn-home-header-right'>
-                                        City of Phoenix
+                                        Protect the Net
                                         <div class='gmn-home-header-right-subtext'>
-                                            What is urban planning?
+                                            Social Issue Campaign
                                         </div>
                                     </div>
                                 </div>
@@ -60,13 +37,13 @@
                         </div>
                         <div class='row gmn-home-skills'>
                             <div class='col-xs-12'>
-                                2D, 3D, Animation, Design, Motion</br>
-                                After Effects, Cinema 4D, Illustrator
+                                2D, Animation, Design, Motion</br>
+                                After Effects, Illustrator
                             </div>
                         </div>
                         <div class='row gmn-home-content'>
                             <div class='col-xs-12'>
-                                Phoenix, Arizona is home to more than 1.5 million people, with the greater metropolitan area being home to more than 4.5 million. Divided into fifteen unique districts, each urban village takes input from within their own communities on how their village will take shape. Through collaboration with village planners, a series of videos was developed utilizing motion graphic design to describe the role of urban planning in Phoenix. These were some of my first real motion design projects out of school and it was a great crash course in the process of completing a video series and working directly with a client.
+                                The internet is the most democratizing entity that the world has ever known. It gives every individual the opportunity to express their thought and ideas. Increasingly, governments and corporations will seek to control what information we have access to as we are able to rely less and less on centrailzed authorities as our source of truth in the world. We must maintain resilience to any powers that will try to censor and restrict our right free and open sources of information. Organizations such as <a href="https://www.fightforthefuture.org/">Fight for the Future</a> and the <a href="https://www.eff.org/">Electronic Frontier Foundation</a> continue to push for net neutrality. This was my very first motion graphic design explainer completed as my Visual Communication Design thesis project at Arizona State University in 2015.
                             </div>
                         </div>
                     </div>

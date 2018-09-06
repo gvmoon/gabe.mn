@@ -5,16 +5,14 @@
         <template slot='middle'>
             <div class='container-fluid'>
                 <div class='row gmn-project-content'>
-                    <img src="static\img\png\city_of_phoenix0.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix1.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix2.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix3.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix4.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix5.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix6.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix7.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix8.png" alt="City of Phoenix Urban Planning">
-                    <img src="static\img\png\city_of_phoenix9.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\phx0.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\phx1.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\phx2.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\phx3.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\phx4.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\phx5.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\phx6.png" alt="City of Phoenix Urban Planning">
+                    <img src="static\img\png\phx7.png" alt="City of Phoenix Urban Planning">
                 </div>
             </div>
             <!--<div class='col-xs-12 col-md-12'>

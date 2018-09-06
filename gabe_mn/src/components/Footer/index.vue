@@ -17,6 +17,10 @@ footer {
 	bottom: 0;
 	font-family: 'KeplerStd-BoldItDisp';
 
+	nav {
+		padding-top: .1em;
+	}
+
 	.gmn-copyright {
 		user-select: none;
 	}
